@@ -9,11 +9,10 @@ public class inputs {
 
     public static byte val(){
         while (true) {
-            System.out.println("Choose a number to use convertion");
             try {
                 return scanner.nextByte();
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a valid input value.");
+                System.out.println("You need to input numbers and no text");
                 scanner.next();
             }
         }
@@ -30,7 +29,7 @@ public class inputs {
                     return currency;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a valid currency value.");
+                System.out.println("You need to input numbers and no text");
                 scanner.next();
             }
         }
